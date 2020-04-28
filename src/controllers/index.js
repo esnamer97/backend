@@ -1,3 +1,6 @@
 module.exports = {
-    HomeController: require("./homeController")
+  HomeController: require("./homeController"),
+  UserController: require("./userController"),
+  IdeaController: require("./ideaController"),
+  CommentController: require("./commentController")
 };

@@ -3,4 +3,4 @@ module.exports = {
   UserService: require("./userService"),
   IdeaService: require("./ideaService"),
   CommentService: require("./commentService")
-}
+};
