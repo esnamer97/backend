@@ -2,5 +2,6 @@ module.exports = {
   HomeService: require("./homeService"),
   UserService: require("./userService"),
   IdeaService: require("./ideaService"),
-  CommentService: require("./commentService")
+  CommentService: require("./commentService"),
+  AuthService: require("./authService")
 };
