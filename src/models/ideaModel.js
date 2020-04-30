@@ -4,35 +4,35 @@ const { Schema } = mongoose;
 const IdeaSchema = new Schema({
   idea: {
     type: String,
-    required: true,
+    required: true
   },
   description: {
-    type: String,
+    type: String
   },
   upvotes: [
     {
-      type: Boolean,
-    },
+      type: Boolean
+    }
   ],
   downvotes: [
     {
-      type: Boolean,
-    },
+      type: Boolean
+    }
   ],
   author: {
     type: Schema.Types.ObjectId,
     ref: "user",
     required: true,
-    autopopulate: true,
+    autopopulate: true
   },
   comments: [
     {
       type: Schema.Types.ObjectId,
       ref: "comment",
       required: true,
-      autopopulate: true,
-    },
-  ],
+      autopopulate: true
+    }
+  ]
 });
 
 IdeaSchema.plugin(require("mongoose-autopopulate"));
