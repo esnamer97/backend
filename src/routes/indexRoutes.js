@@ -1,3 +1,6 @@
 module.exports = {
-    HomeRoutes: require("./homeRoutes")
-}
+  HomeRoutes: require("./homeRoutes"),
+  UserRoutes: require("./userRoutes"),
+  IdeaRoutes: require("./ideaRoutes"),
+  CommentRoutes: require("./commentRoutes")
+};
